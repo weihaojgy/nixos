@@ -37,7 +37,6 @@
     librewolf
     pkgs-stable.libreoffice
     pkgs-stable.kdePackages.okular
-    bottles
     vlc
 
     llama-cpp-vulkan

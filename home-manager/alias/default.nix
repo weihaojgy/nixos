@@ -18,7 +18,7 @@
     nix-pkg = "nix search nixpkgs";
 
     llm-sr = "llama serve -hf";
-    llm-cl = "llama-cli-hf";
+    llm-cl = "llama-cli -hf";
     whs-cl = "whisper-cli -m";
 
     gplus = "g++ -std=c++23 -Wall -Wextra -Wpedantic";

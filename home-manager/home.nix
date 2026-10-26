@@ -21,7 +21,6 @@
     fastfetch
     cmatrix
     quickshell
-    siyuan
 
     nerd-fonts.hurmit
   ];

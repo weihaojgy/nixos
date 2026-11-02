@@ -12,8 +12,9 @@
     settings = {
       main = {
         font = "Hurmit Nerd Font:size=10";
-#        shell = "/etc/profiles/per-user/sy0/bin/zsh";
-        title = "foot";
+        shell = "/etc/profiles/per-user/s4yok/bin/zsh";
+        title = " foot";
+
       };
 
       colors-dark = {
@@ -57,6 +58,12 @@
         style = "curly";
         osc8-underline = "always";
         launch = "xdg-open $${url}";
+
+      };
+
+      csd = {
+        preferred = "client";
+        hide-when-maximized = "yes";
 
       };
 

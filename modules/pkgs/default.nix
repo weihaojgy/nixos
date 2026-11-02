@@ -19,6 +19,8 @@
     nvtopPackages.amd
     yazi
     w3m
+    procps
+    iw
 
     eza
     bat

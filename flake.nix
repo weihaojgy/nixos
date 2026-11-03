@@ -29,9 +29,9 @@
         config.allowUnfree = true;
       };
 
-    in
-    {
-      nixosConfigurations.${hostname} = nixpkgs.lib.nixosSystem {
+      pkgs = nixpkgs.legacyPackages.${system};
+
+      nixosConfig = nixpkgs.lib.nixosSystem {
         inherit system;
 
         specialArgs = {
@@ -62,5 +62,15 @@
           }
         ];
       };
+
+    in
+    {
+      nixosConfigurations.${hostname} = nixosConfig;
+
+      formatter.${system} = pkgs.nixfmt;
+
+      checks.${system}.nixos-eval = pkgs.runCommand "nixos-eval" { } ''
+        echo "${nixosConfig.config.system.build.toplevel.drvPath}" > $out
+      '';
     };
 }

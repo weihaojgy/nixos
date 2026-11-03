@@ -47,7 +47,6 @@
 
     swaylock
     fuzzel
-    foot
     awww
   ];
 

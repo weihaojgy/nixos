@@ -21,7 +21,7 @@
     fastfetch
     cmatrix
     quickshell
-
+    zellij
     nerd-fonts.hurmit
   ];
 
